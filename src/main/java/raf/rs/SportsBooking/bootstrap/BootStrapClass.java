@@ -4,10 +4,7 @@ package raf.rs.SportsBooking.bootstrap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import raf.rs.SportsBooking.model.Coach;
-import raf.rs.SportsBooking.model.Field;
-import raf.rs.SportsBooking.model.Session;
-import raf.rs.SportsBooking.model.SportsGroup;
+import raf.rs.SportsBooking.model.*;
 import raf.rs.SportsBooking.repository.CoachRepo;
 import raf.rs.SportsBooking.repository.FieldRepo;
 import raf.rs.SportsBooking.repository.SessionRepo;
@@ -50,6 +47,8 @@ public class BootStrapClass implements CommandLineRunner {
         String[] coachingTitles = {"Head Coach", "Assistant Coach", "Fitness Coach", "Technical Coach", "Defensive Coordinator"};
 
         String[] outOrIn = {"outside","inside"};
+
+
 
         for(int i = 0; i < 5; i++){
 
